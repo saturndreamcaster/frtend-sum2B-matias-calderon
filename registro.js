@@ -42,38 +42,6 @@ document.addEventListener('DOMContentLoaded', function(){
     obsCount.textContent = additionalObservations.value.length;
   }
 
-  // Basic matching validation for email and password fields and required agreements
-  form.addEventListener('submit', function(e){
-    const email = form.owner_email.value;
-    const emailConfirm = form.owner_email_confirm.value;
-    const pwd = form.owner_password.value;
-    const pwdConfirm = form.owner_password_confirm.value;
-
-    if(email !== emailConfirm){
-      alert('Los correos electrónicos no coinciden.');
-      e.preventDefault();
-      return false;
-    }
-    if(pwd !== pwdConfirm){
-      alert('Las contraseñas no coinciden.');
-      e.preventDefault();
-      return false;
-    }
-
-    if(acceptTerms && !acceptTerms.checked){
-      alert('Debe aceptar los Términos y Condiciones.');
-      e.preventDefault();
-      return false;
-    }
-    if(acceptPrivacy && !acceptPrivacy.checked){
-      alert('Debe aceptar la Política de Privacidad.');
-      e.preventDefault();
-      return false;
-    }
-
-    // Form is valid (no backend), allow default submission behavior for now
-  });
-
   // Reset handler: reinitialize UI state after reset
   form.addEventListener('reset', function(){
     // delay to allow form controls to reset
