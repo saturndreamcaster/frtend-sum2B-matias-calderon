@@ -21,3 +21,17 @@ fieldset.sex-field { border:none; padding:0; margin:0 0 0.75rem 0; display:flex;
   fieldset.sex-field { grid-column: span 2; }
   .form-actions { padding-top: 0.5rem; }
 }
+
+/* Additional form styles */
+.checkbox-group label, .radio-group label { display:inline-block; margin-right:0.75rem; margin-top:0.5rem; }
+.checkbox-group strong, .radio-group strong { display:block; margin-bottom:0.5rem; }
+.reset-btn { background:#f0f0f0; color:#222; padding:0.55rem 0.9rem; border:none; border-radius:6px; margin-left:0.5rem; cursor:pointer; }
+.reset-btn:hover { transform:translateY(-3px); }
+.back-link { margin-top:0.75rem; }
+.back-link a { color:var(--green); text-decoration:none; font-weight:600; }
+#additionalObservations, #petConditions { min-height:80px; }
+.small { font-size:0.85rem; color:#666; }
+
+@media (max-width: 699px) {
+  .form-section { display:block; }
+}

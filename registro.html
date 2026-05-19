@@ -127,8 +127,72 @@
                 </label>
             </section>
 
+            <section class="form-section">
+                <h2>Sección C — Preferencia de Atención</h2>
+                <div class="checkbox-group">
+                    <strong>Servicios de interés:</strong>
+                    <label><input type="checkbox" name="interest_services" value="Consulta general"> Consulta general</label>
+                    <label><input type="checkbox" name="interest_services" value="Vacunacion"> Vacunación</label>
+                    <label><input type="checkbox" name="interest_services" value="Cirugia"> Cirugía</label>
+                    <label><input type="checkbox" name="interest_services" value="Grooming"> Grooming</label>
+                    <label><input type="checkbox" name="interest_services" value="Internacion"> Internación</label>
+                    <label><input type="checkbox" name="interest_services" value="Tienda online"> Tienda online</label>
+                </div>
+
+                <div class="radio-group">
+                    <strong>Turno preferido:</strong>
+                    <label><input type="radio" name="preferred_shift" value="Manana" required> Mañana</label>
+                    <label><input type="radio" name="preferred_shift" value="Tarde" required> Tarde</label>
+                    <label><input type="radio" name="preferred_shift" value="Indistinto" required> Indistinto</label>
+                </div>
+
+                <label>Veterinario preferido
+                    <select name="preferred_vet">
+                        <option>Sin preferencia</option>
+                        <option>Dr. Ignacio Pérez</option>
+                        <option>Dra. Laura Santoro</option>
+                        <option>Dr. Martín Duarte</option>
+                    </select>
+                </label>
+
+                <label>Frecuencia estimada de visitas
+                    <select name="visit_frequency">
+                        <option>Primera vez</option>
+                        <option>Mensual</option>
+                        <option>Cada 3 meses</option>
+                        <option>Según necesidad</option>
+                    </select>
+                </label>
+
+                <label>¿Cómo nos conoció?
+                    <select name="how_found">
+                        <option>Redes sociales</option>
+                        <option>Recomendación</option>
+                        <option>Búsqueda web</option>
+                        <option>Paso por el local</option>
+                        <option>Otro</option>
+                    </select>
+                </label>
+            </section>
+
+            <section class="form-section">
+                <h2>Sección D — Confirmación</h2>
+                <label>Observaciones adicionales (máx 300 caracteres)
+                    <textarea name="additional_observations" id="additionalObservations" maxlength="300" rows="4"></textarea>
+                    <small><span id="obsCount">0</span>/300</small>
+                </label>
+
+                <label><input type="checkbox" name="accept_reminders"> Acepta recibir recordatorios de turnos por correo electrónico</label>
+
+                <label><input type="checkbox" name="accept_terms" id="acceptTerms" required> Acepto los <a href="#" target="_blank">Términos y Condiciones</a> *</label>
+
+                <label><input type="checkbox" name="accept_privacy" id="acceptPrivacy" required> Acepto la Política de Privacidad *</label>
+            </section>
+
             <div class="form-actions">
-                <button type="submit" class="submit-btn">Enviar registro</button>
+                <button type="submit" class="submit-btn">Crear cuenta</button>
+                <button type="reset" class="reset-btn">Limpiar</button>
+                <div class="back-link"><a href="index.html">Volver al inicio</a></div>
             </div>
         </form>
     </main>
