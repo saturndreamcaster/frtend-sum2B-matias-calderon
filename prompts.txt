@@ -1,0 +1,27 @@
+============================================================
+ CONSULTA #1 
+Etapa del proyecto: Etapa #1
+Fecha: 19-05-2026
+ ------------------------------------------------------------
+PROMPT ENVIADO A COPILOT: Primera Etapa: Por favor crea la estructura de un sitio web para una veterinaria llamada 'VetCare'. En la barra de navegación necesito que el logo/nombre se encuentre a la izquierda, que las secciones de links a navegar sean las siguientes: Inicio, Servicios, Especialidades, Tienda y Registrarse. Dejar sección "Registrarse" lista para que apunte a registro.html (el cuál se creara después).
+------------------------------------------------------------
+RESPUESTA RECIBIDA (resumen breve): "Primero crearé la lista de tareas y luego abrire index.html y style.css para actualizar la barra y darle su estilo. Se agregaron cambios de estructura y navegación, y después se aplicaron parches para crear lo necesario. El logo quedo a la izquierda, y las secciones a la derecha. Todavía no se ha creado el registro.html."
+----------------------------------------------------------
+USO EN EL PROYECTO: Use la respuesta tal cuál debido a que me dejo un formato básico perfecto para poder hacer el primer commit. No genero información que no se pidió y dio lo justo y necesario para poder seguir con el proyecto.
+------------------------------------------------------ 
+REFLEXION PERSONAL: El prompt fue útil en si, pero le daría mas puntos en razón de que "no hagas esto" o "espera a que llegue a la etapa correspondiente". Normalmente no seria bueno mantener el prompt así, pero mejor algo a nada la verdad.
+============================================================
+
+============================================================
+ CONSULTA #2 
+Etapa del proyecto: Etapa #1
+Fecha: 19-05-2026
+ ------------------------------------------------------------
+PROMPT ENVIADO A COPILOT: Primera Etapa: Por favor crea la estructura de un sitio web para una veterinaria llamada 'VetCare'. En la barra de navegación necesito que el logo/nombre se encuentre a la izquierda, que las secciones de links a navegar sean las siguientes: Inicio, Servicios, Especialidades, Tienda y Registrarse. Dejar sección "Registrarse" lista para que apunte a registro.html (el cuál se creara después).
+------------------------------------------------------------
+RESPUESTA RECIBIDA (resumen breve): "Primero crearé la lista de tareas y luego abrire index.html y style.css para actualizar la barra y darle su estilo. Se agregaron cambios de estructura y navegación, y después se aplicaron parches para crear lo necesario. El logo quedo a la izquierda, y las secciones a la derecha. Todavía no se ha creado el registro.html."
+----------------------------------------------------------
+USO EN EL PROYECTO: Use la respuesta tal cuál debido a que me dejo un formato básico perfecto para poder hacer el primer commit. No genero información que no se pidió y dio lo justo y necesario para poder seguir con el proyecto.
+------------------------------------------------------ 
+REFLEXION PERSONAL: El prompt fue útil en si, pero le daría mas puntos en razón de que "no hagas esto" o "espera a que llegue a la etapa correspondiente". Normalmente no seria bueno mantener el prompt así, pero mejor algo a nada la verdad.
+============================================================
