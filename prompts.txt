@@ -214,3 +214,5 @@ USO EN EL PROYECTO: El prompt fue utilizado en el proyecto para poder añadir lo
 ------------------------------------------------------ 
 REFLEXION PERSONAL: Fue lo mismo que el anterior la verdad, un poco complicado de quedar bien, pero el prompt se podria ahcer mejor sin especificar tanta información y utilizar una redacción más limpia.
 ============================================================
+
+terminado.
