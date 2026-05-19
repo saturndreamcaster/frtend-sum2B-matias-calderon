@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Registro - VetCare</title>
+    <link rel="stylesheet" href="registro.css">
+</head>
+<body>
+    <header class="reg-header">
+        <a href="index.html" class="reg-logo">VetCare</a>
+    </header>
+
+    <main class="reg-main">
+        <h1>Registro de propietario y mascota</h1>
+        <form id="registroForm" novalidate>
+            <section class="form-section">
+                <h2>Sección A — Datos del dueño</h2>
+                <label>Nombre completo *
+                    <input type="text" name="owner_name" required>
+                </label>
+
+                <label>Fecha de nacimiento *
+                    <input type="date" name="owner_dob" required>
+                </label>
+
+                <label>DNI *
+                    <input type="text" name="owner_dni" required>
+                </label>
+
+                <label>Correo electrónico *
+                    <input type="email" name="owner_email" required>
+                </label>
+
+                <label>Confirmar correo electrónico *
+                    <input type="email" name="owner_email_confirm" required>
+                </label>
+
+                <label>Contraseña *
+                    <input type="password" name="owner_password" required minlength="8">
+                </label>
+
+                <label>Confirmar contraseña *
+                    <input type="password" name="owner_password_confirm" required minlength="8">
+                </label>
+
+                <label>Teléfono de contacto *
+                    <input type="tel" name="owner_phone" required>
+                </label>
+
+                <label>Dirección del domicilio *
+                    <input type="text" name="owner_address" required>
+                </label>
+
+                <label>Localidad *
+                    <input type="text" name="owner_city" required>
+                </label>
+
+                <label>Provincia *
+                    <select name="owner_province" required>
+                        <option value="">Seleccione...</option>
+                        <option>Buenos Aires</option>
+                        <option>Córdoba</option>
+                        <option>Santa Fe</option>
+                        <option>Mendoza</option>
+                        <option>Salta</option>
+                        <option>Misiones</option>
+                        <option>Neuquén</option>
+                        <option>La Pampa</option>
+                        <option>Formosa</option>
+                        <option>Jujuy</option>
+                    </select>
+                </label>
+            </section>
+
+            <section class="form-section">
+                <h2>Sección B — Datos de la mascota</h2>
+                <label>Nombre de la mascota *
+                    <input type="text" name="pet_name" required>
+                </label>
+
+                <label>Especie *
+                    <select name="pet_species" id="petSpecies" required>
+                        <option value="">Seleccione...</option>
+                        <option value="Perro">Perro</option>
+                        <option value="Gato">Gato</option>
+                        <option value="Ave">Ave</option>
+                        <option value="Conejo">Conejo</option>
+                        <option value="Reptil">Reptil</option>
+                        <option value="Otro">Otro</option>
+                    </select>
+                </label>
+
+                <label id="otherSpeciesLabel" class="hidden">Especifique especie
+                    <input type="text" name="pet_species_other" id="petSpeciesOther">
+                </label>
+
+                <label>Raza *
+                    <input type="text" name="pet_breed" required>
+                </label>
+
+                <fieldset class="sex-field">
+                    <legend>Sexo *</legend>
+                    <label><input type="radio" name="pet_sex" value="Macho" required> Macho</label>
+                    <label><input type="radio" name="pet_sex" value="Hembra" required> Hembra</label>
+                </fieldset>
+
+                <label>Fecha de nacimiento de la mascota *
+                    <input type="date" name="pet_dob" required>
+                </label>
+
+                <label>Color o descripción física
+                    <input type="text" name="pet_color">
+                </label>
+
+                <label><input type="checkbox" name="pet_neutered" id="petNeutered"> La mascota está castrada o esterilizada</label>
+
+                <label><input type="checkbox" name="pet_microchip" id="petMicrochip"> La mascota tiene microchip</label>
+
+                <label id="chipNumberLabel" class="hidden">Número de microchip
+                    <input type="text" name="pet_chip_number" id="petChipNumber">
+                </label>
+
+                <label>Alergias o condiciones médicas (máx 250 caracteres)
+                    <textarea name="pet_conditions" id="petConditions" maxlength="250" rows="4"></textarea>
+                    <small><span id="charCount">0</span>/250</small>
+                </label>
+            </section>
+
+            <div class="form-actions">
+                <button type="submit" class="submit-btn">Enviar registro</button>
+            </div>
+        </form>
+    </main>
+
+    <script src="registro.js"></script>
+</body>
+</html>

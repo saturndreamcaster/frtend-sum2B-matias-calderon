@@ -26,6 +26,25 @@ body { font-family: Arial, Helvetica, sans-serif; line-height: 1.4; color: var(-
 .hero h1 { font-size: 2rem; margin-bottom: 0.5rem; color: var(--blue); }
 .hero p { color: var(--muted); }
 
+/* Hero background image + overlay */
+.hero { position: relative; display: flex; align-items: center; justify-content: center; min-height: 320px; color: var(--white); }
+.hero::before { content: ''; position: absolute; inset: 0; background-image: url('https://images.unsplash.com/photo-1518791841217-8f162f1e1131?q=80&w=1600&auto=format&fit=crop&ixlib=rb-4.0.3&s='); background-size: cover; background-position: center; filter: brightness(0.9); }
+.hero::after { content: ''; position: absolute; inset: 0; background: rgba(15,64,49,0.35); }
+.hero .hero-content { position: relative; z-index: 2; max-width: 900px; padding: 2rem; text-align: center; }
+.hero h1 { color: var(--white); font-size: 2.25rem; }
+.hero .slogan { color: rgba(255,255,255,0.95); margin-bottom: 1rem; font-size: 1.1rem; }
+
+/* CTA buttons */
+.btn-cta, .btn-primary { display: inline-block; background: var(--yellow); color: var(--muted-dark); padding: 0.5rem 0.9rem; border-radius: 6px; text-decoration: none; font-weight: 700; box-shadow: 0 4px 10px rgba(31,111,235,0.06); transition: transform 0.18s ease, box-shadow 0.18s ease; }
+.btn-cta:hover, .btn-primary:hover { transform: translateY(-3px); box-shadow: 0 12px 24px rgba(31,111,235,0.08); }
+
+@media (max-width: 600px) {
+	.hero { min-height: 260px; }
+	.hero h1 { font-size: 1.6rem; }
+	.hero .slogan { font-size: 1rem; }
+	.btn-cta, .btn-primary { padding: 0.45rem 0.7rem; }
+}
+
 /* Responsive */
 @media (max-width: 600px) {
 	.nav-links { gap: 0.5rem; font-size: 0.95rem; }

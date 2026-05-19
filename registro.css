@@ -1,0 +1,23 @@
+/* Styles for registro.html */
+:root { --green: #2f8f6e; --blue: #1f6feb; --muted: #6b7a7a; --bg: #f7f9f8; --white: #fff; }
+* { box-sizing: border-box; }
+body { font-family: Arial, Helvetica, sans-serif; background: var(--bg); color: #222; padding: 1rem; }
+.reg-header { display:flex; align-items:center; padding:0.5rem 0; }
+.reg-logo { font-weight:800; color:var(--green); text-decoration:none; font-size:1.25rem; }
+.reg-main { max-width:900px; margin:0 auto; background:var(--white); padding:1.25rem; border-radius:8px; box-shadow:0 6px 18px rgba(31,111,235,0.06); }
+.reg-main h1 { text-align:center; color:var(--blue); margin-bottom:1rem; }
+.form-section { margin-bottom:1rem; }
+.form-section h2 { font-size:1.05rem; color:var(--green); margin-bottom:0.5rem; }
+label { display:block; margin-bottom:0.65rem; font-size:0.95rem; }
+input[type="text"], input[type="email"], input[type="password"], input[type="date"], input[type="tel"], select, textarea { width:100%; padding:0.5rem; border:1px solid #e2e6e6; border-radius:6px; }
+fieldset.sex-field { border:none; padding:0; margin:0 0 0.75rem 0; display:flex; gap:1rem; }
+.hidden { display:none; }
+.form-actions { text-align:center; margin-top:1rem; }
+.submit-btn { background:var(--green); color:var(--white); padding:0.6rem 1rem; border:none; border-radius:6px; font-weight:700; cursor:pointer; }
+.submit-btn:hover { transform:translateY(-3px); }
+
+@media (min-width: 700px) {
+  .form-section { display:grid; grid-template-columns: repeat(2, 1fr); gap: 1rem; }
+  fieldset.sex-field { grid-column: span 2; }
+  .form-actions { padding-top: 0.5rem; }
+}
