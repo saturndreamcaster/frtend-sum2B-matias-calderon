@@ -20,6 +20,10 @@ document.addEventListener('DOMContentLoaded', function() {
   const petDob = form.pet_dob;
   const petMicrochip = document.getElementById('petMicrochip');
   const petChipNumber = document.getElementById('petChipNumber');
+  const petConditions = document.getElementById('petConditions');
+  const interestServices = form.querySelectorAll('input[name="interest_services"]');
+  const preferredShiftRadios = form.elements['preferred_shift'];
+  const visitFrequency = form.visit_frequency;
 
   const allFields = [
     ownerName,
@@ -56,6 +60,16 @@ document.addEventListener('DOMContentLoaded', function() {
       radio.classList.toggle('campo-error', !valid);
       radio.setCustomValidity(valid ? '' : message);
       radio.setAttribute('aria-invalid', valid ? 'false' : 'true');
+    });
+  }
+
+  function setCheckboxGroupStatus(checkboxes, valid, message = '') {
+    if (!checkboxes || !checkboxes.length) return;
+    checkboxes.forEach(checkbox => {
+      checkbox.classList.toggle('campo-ok', valid);
+      checkbox.classList.toggle('campo-error', !valid);
+      checkbox.setCustomValidity(valid ? '' : message);
+      checkbox.setAttribute('aria-invalid', valid ? 'false' : 'true');
     });
   }
 
@@ -280,6 +294,41 @@ document.addEventListener('DOMContentLoaded', function() {
       setFieldStatus(petChipNumber, true);
     }
 
+    if (petConditions && petConditions.value.trim().length > 0 && petConditions.value.length > 250) {
+      setFieldStatus(petConditions, false, 'El campo de alergias no puede superar los 250 caracteres.');
+      valid = false;
+    } else if (petConditions) {
+      setFieldStatus(petConditions, true);
+    }
+
+    return valid;
+  }
+
+  function validatePreferenceSection() {
+    let valid = true;
+    const anyServiceSelected = Array.from(interestServices).some(checkbox => checkbox.checked);
+    if (!anyServiceSelected) {
+      setCheckboxGroupStatus(interestServices, false, 'Seleccione al menos un servicio de interés.');
+      valid = false;
+    } else {
+      setCheckboxGroupStatus(interestServices, true);
+    }
+
+    const preferredShiftSelected = Array.from(preferredShiftRadios).some(radio => radio.checked);
+    if (!preferredShiftSelected) {
+      setRadioStatus(preferredShiftRadios, false, 'Seleccione un turno preferido.');
+      valid = false;
+    } else {
+      setRadioStatus(preferredShiftRadios, true);
+    }
+
+    if (!visitFrequency || !visitFrequency.value || visitFrequency.value.trim() === '') {
+      setFieldStatus(visitFrequency, false, 'Seleccione la frecuencia estimada de visitas.');
+      valid = false;
+    } else {
+      setFieldStatus(visitFrequency, true);
+    }
+
     return valid;
   }
 
@@ -287,8 +336,9 @@ document.addEventListener('DOMContentLoaded', function() {
     clearStatus();
     const ownerValid = validateOwnerSection();
     const petValid = validatePetSection();
+    const preferenceValid = validatePreferenceSection();
 
-    if (!ownerValid || !petValid) {
+    if (!ownerValid || !petValid || !preferenceValid) {
       event.preventDefault();
       const firstError = form.querySelector('.campo-error');
       if (firstError) {

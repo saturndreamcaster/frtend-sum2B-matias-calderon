@@ -17,11 +17,200 @@ REFLEXION PERSONAL: El prompt fue útil en si, pero le daría mas puntos en raz�
 Etapa del proyecto: Etapa #1
 Fecha: 19-05-2026
  ------------------------------------------------------------
-PROMPT ENVIADO A COPILOT: Primera Etapa: Por favor crea la estructura de un sitio web para una veterinaria llamada 'VetCare'. En la barra de navegación necesito que el logo/nombre se encuentre a la izquierda, que las secciones de links a navegar sean las siguientes: Inicio, Servicios, Especialidades, Tienda y Registrarse. Dejar sección "Registrarse" lista para que apunte a registro.html (el cuál se creara después).
+PROMPT ENVIADO A COPILOT: Primera Etapa: Ahora, sigue con los servicios principales de la clinica en formato de tarjeta con CSS Grid o Flexbox, dejando espacio para insertar un icono y una imagen, el nombre del servicio y descripciones breves de dos a tres oraciones. Haz los siguientes campos: Consultas Medicas, Diagnostico, Cirugía, Recuperación, Vacunación, Desparasitación, Internación y al final Cuidados Intensivos. 
 ------------------------------------------------------------
-RESPUESTA RECIBIDA (resumen breve): "Primero crearé la lista de tareas y luego abrire index.html y style.css para actualizar la barra y darle su estilo. Se agregaron cambios de estructura y navegación, y después se aplicaron parches para crear lo necesario. El logo quedo a la izquierda, y las secciones a la derecha. Todavía no se ha creado el registro.html."
+RESPUESTA RECIBIDA (resumen breve): "Actualizaré la lista de tareas para la incluir secciones de servicios y modificare index.html y style.css para añadir las tarjetas. Ya insertadas las marcare como completas."
 ----------------------------------------------------------
-USO EN EL PROYECTO: Use la respuesta tal cuál debido a que me dejo un formato básico perfecto para poder hacer el primer commit. No genero información que no se pidió y dio lo justo y necesario para poder seguir con el proyecto.
+USO EN EL PROYECTO: Me sirvio la respuesta, ayuda a añadir la información necesaria para cualquier persona que necesite visualizar el sitio web de una manera u otra. 
 ------------------------------------------------------ 
-REFLEXION PERSONAL: El prompt fue útil en si, pero le daría mas puntos en razón de que "no hagas esto" o "espera a que llegue a la etapa correspondiente". Normalmente no seria bueno mantener el prompt así, pero mejor algo a nada la verdad.
+REFLEXION PERSONAL: La verdad el prompt fue en estancia neutra la manera en que tomo mis palabras y modifico todo de una sin demasiada ayuda, la verdad, pero dio la aguja en el pajar con la manera que funciono.
+============================================================
+
+============================================================
+ CONSULTA #3
+Etapa del proyecto: Etapa #1
+Fecha: 19-05-2026
+ ------------------------------------------------------------
+PROMPT ENVIADO A COPILOT: Primera Etapa: Para continuar, dale con la sección de especialidades que muestre las especies o areas atención de la clinica. Necesito que cada especialidad tenga espacio para imagenes, nombre y una breve descripción de cada espacio. Te doy ejemplos: Animales pequeños (gatos/perros), aves, animales exoticos, animales de granja u o conejos. Crea otra sección también llamada "Nuestro Equipo" que tenga un minimo de tres profesionales, que tengan espacios para fotos, su nombre, el titulo profesional y una breve descripción del especialista. Puedes elegir los titulos profesionales tú, pero yo haré las descripciones, nombres y imagenes.
+------------------------------------------------------------
+RESPUESTA RECIBIDA (resumen breve): "Actualizaré la lista de tareas para la incluir secciones de servicios y modificare index.html y style.css para ubicar las ubicaciones correctas de las inserciones nuevas, y añadire los estilos responsivos a las secciones de especialidades y nuestro equipo. Tienen nombres y descripciones placeholders por ahora."
+----------------------------------------------------------
+USO EN EL PROYECTO: Me ayudo a añadir las partes complicadas y generar información la cuál normalmente tomaria mucho tiempo realizar en el tiempo limite que se tiene en la evaluación.
+------------------------------------------------------ 
+REFLEXION PERSONAL: Yo creo que haria que el prompt tenga menos información y lo usaria igualmente, pero la verdad la generación de información puede ser incorrecta o simplemente no bien redactada, asi que el siguiente intento haria la información yo mismo.
+============================================================
+
+
+============================================================
+ CONSULTA #4
+Etapa del proyecto: Etapa #1
+Fecha: 19-05-2026
+ ------------------------------------------------------------
+PROMPT ENVIADO A COPILOT: Primera Etapa: Ya para finalizar, añade una sección de testimonios con tres testimonios. Necesito que tenga la siguiente información: Nombre del dueño, nombre, la especie de la mascota, texto de comentario y la calificación del servicio. Utiliza nombres de Gurren Lagann para cada paciente y genera la demás información aleatoriamente. Para finalizar la parte visual, añade el footer con el nombre y logo de la clinica (placeholder), horarios de atención, dirección y datos de contacto ficticios, links a redes sociales (placeholder) y el año de copyright. Ya finalizado esto, adapta el sitio para ser visible en pantallas móviles y que cada tarjeta tenga efecto hover con una transición suave, y cambia la paleta de colores a una que transmita salud y confianza. (verde, blanco, azul, amarillo)
+------------------------------------------------------------
+RESPUESTA RECIBIDA (resumen breve): "Primero añadire la sección de testimonios con cada nombre, y después seguire con la actualización del sitio con el footer - la actualización de paleta de colores y los efectos y ajustes responsivos necesarios para poder seguir con la creación del sitio."
+----------------------------------------------------------
+USO EN EL PROYECTO: 
+------------------------------------------------------ 
+REFLEXION PERSONAL: 
+============================================================
+
+
+============================================================
+ CONSULTA #5
+Etapa del proyecto: Etapa #2
+Fecha: 19-05-2026
+ ------------------------------------------------------------
+PROMPT ENVIADO A COPILOT: Primera etapa: Antes que todo, añade una superposición semitransparente en el hero de una imagen de fondo relacionada a mascotas (elige cualquiera.) Después añade un slogan o frase que transmita cuidado y confianza. Haz que el registro.html se vuelva un boton de llamada a la acción (CTA). 
+Segunda etapa: Ahora vamos con la segunda etapa del proyecto, y la más longeva. Cree la sección de registro.html con su CSS también, y necesito que conectes la parte de la primera etapa con este HTML al hacerle click. Ahora, enfocate en lo siguiente con registro.html y añade lo siguiente:
+Sección A: 
+Datos del dueño.
+- Nombre completo (input text, requerido).
+- Fecha de nacimiento (input date, requerido).
+- DNI (input text, requerido).
+- Correo electronico (input email, requerido).
+- Confirmar correo electronico (input email, requerido).
+- Contrasena (input password, requerido).
+- Confirmar contrasena (input password, requerido).
+- Telefono de contacto (input tel, requerido).
+- Direccion del domicilio (input text, requerido).
+- Localidad (input text, requerido).
+- Provincia (select con al menos 10 provincias argentinas, requerido).
+Sección B:
+Datos de mascota.
+- Nombre de la mascota (input text, requerido).
+- Especie (select: Perro, Gato, Ave, Conejo, Reptil, Otro, requerido). Si se selecciona "Otro",
+mostrar un campo de texto adicional.
+- Raza (input text, requerido).
+- Sexo (radio buttons: Macho, Hembra, requerido).
+- Fecha de nacimiento de la mascota (input date, requerido).
+- Color o descripcion fisica (input text, opcional).
+- La mascota esta castrada o esterilizada (checkbox).
+- La mascota tiene microchip (checkbox). Si esta marcado, mostrar campo para ingresar el
+numero de chip.
+- Alergias o condiciones medicas conocidas (textarea, opcional, maximo 250 caracteres, con
+contador).
+Haz esto primero y después te dare lo que sigue, asi vamos de mano a mano.
+
+------------------------------------------------------------
+RESPUESTA RECIBIDA (resumen breve): "Primero actualizare la sección de index.html y lo demás con la primera etapa, y después añadire los cambios a registro.html después de haber creados los archivos. En la segunda sección se ejecutaran los cambios ahora. También cree registro.js para poder verificar que coincidan antes de enviarlos."
+----------------------------------------------------------
+USO EN EL PROYECTO: Se utilizo de manera correcta para poder validar los formularios y la información necesaria para ello.
+------------------------------------------------------ 
+REFLEXION PERSONAL: La verdad, creo el JS sin que se lo pidiera y dejo la información impecable en el sitio en si - asi que no estoy tan confundido o enojado con ello, pero dejo un buen prompt al final y avanzo demasiado el proyecto.
+============================================================
+
+
+============================================================
+ CONSULTA #6
+Etapa del proyecto: Etapa #2
+Fecha: 19-05-2026
+ ------------------------------------------------------------
+PROMPT ENVIADO A COPILOT: Segunda etapa: Sigue con el formulario, necesito que añadas las siguientes secciones y te pediré que realices los siguientes cambios para poder tener mas eficiencia al crear el proyecto.
+Sección C: Preferencia de Atención
+- Servicios de interes (checkboxes multiples): Consulta general, Vacunacion, Cirugia,
+Grooming, Internacion, Tienda online.
+- Turno preferido (radio buttons: Manana, Tarde, Indistinto).
+- Veterinario preferido (select con al menos 3 nombres ficticios de profesionales mas la
+opcion "Sin preferencia").
+- Frecuencia estimada de visitas (select: Primera vez, Mensual, Cada 3 meses, Segun
+necesidad).
+- Como nos conocio (select: Redes sociales, Recomendacion, Busqueda web, Paso por el
+local, Otro).
+
+Sección D: Confirmación
+- Observaciones adicionales (textarea, maximo 300 caracteres, con contador de caracteres
+visible).
+- Acepta recibir recordatorios de turnos por correo electronico (checkbox).
+- Acepta los Terminos y Condiciones (checkbox obligatorio, con enlace a pagina ficticia).
+- Acepta la Politica de Privacidad (checkbox obligatorio).
+
+Botones de acción (debajo de todas las secciones, pero dentro del formulario):
+- Boton principal "Crear cuenta" (submit), centrado y con estilo destacado.
+- Boton secundario "Limpiar" (reset).
+- Enlace "Volver al inicio" que redirija a index.html.
+
+Después te dire que ajustes necesitas realizar.
+------------------------------------------------------------
+RESPUESTA RECIBIDA (resumen breve): "Primero actualizare la sección de index.html y lo demás con la primera etapa, y después añadire los cambios a registro.html después de haber creados los archivos. En la segunda sección se ejecutaran los cambios ahora. También cree registro.js para poder verificar que coincidan antes de enviarlos."
+----------------------------------------------------------
+USO EN EL PROYECTO: Se utilizo de manera correcta para poder validar los formularios y la información necesaria para ello.
+------------------------------------------------------ 
+REFLEXION PERSONAL: La verdad, creo el JS sin que se lo pidiera y dejo la información impecable en el sitio en si - asi que no estoy tan confundido o enojado con ello, pero dejo un buen prompt al final y avanzo demasiado el proyecto.
+============================================================
+
+
+============================================================
+ CONSULTA #7
+Etapa del proyecto: Etapa #2
+Fecha: 19-05-2026
+ ------------------------------------------------------------
+PROMPT ENVIADO A COPILOT: Segunda etapa: Ahora necesito que modifiques el formulario de la siguiente manera para estilo y accesibilidad del usuario. Deja que los campos cambien visualmente al recibir foco (:focus:) utilizando un borde con color y una sombra suave. Prepara las clases de CSS "campo-error" con un borde rojo y "campo-ok" con un borde verde para la siguiente etapa, Etapa 3. Después deja que todas sean visualmente separadas con un borde redondeado de cualquiera de los colores en la paleta base, que se encuentre el formulario centrado con un ancho máximo de 750 pixeles, y que los campos sean visibles en escritorio y móvil con diseño responsivo. Este es el prompt final antes de la Etapa 3.
+------------------------------------------------------------
+RESPUESTA RECIBIDA (resumen breve): "Se actualizo el registro.html para poder seguir con lo pedido en el prompt. Arregle errores de sintaxis y modifique completamente para poder dejar las clases preparadas para la siguiente fase."
+----------------------------------------------------------
+USO EN EL PROYECTO: El prompt fue utilizado para tener mejor flair visual y nada más, pero también arreglar errores que me funcionaron de forma longeva.
+------------------------------------------------------ 
+REFLEXION PERSONAL: Me ayudo realizar lo necesario, la verdad no se necesitaba cambiar mucho - asi que fue un arreglo rapido la verdad!
+============================================================
+
+============================================================
+ CONSULTA #8
+Etapa del proyecto: Etapa #3
+Fecha: 19-05-2026
+ ------------------------------------------------------------
+PROMPT ENVIADO A COPILOT: Tercera etapa: Ahora cree "validaciones.js". Valida las siguientes cosas, que van en registro.html (osea en el formulario) y conectalos.
+Sección A) Datos del dueño: 
+Nombre completo - Solo letras y espacios. Minimo 5 caracteres, maximo 80. No puede
+estar vacio.
+Fecha de nacimiento - El dueño debe ser mayor de 18 anos al momento del registro.
+DNI - Solo numeros. Entre 7 y 8 digitos.
+Correo electronico - Formato valido con @ y dominio. Usar expresion regular.
+Confirmar correo - Debe coincidir exactamente con el campo de correo electronico.
+Contraseña Minimo - 8 caracteres. Debe contener al menos una mayuscula, un
+numero y un caracter especial (!@#$%^&*).
+Confirmar contrasena - Debe coincidir exactamente con la contrasena.
+Telefono - Solo digitos, guiones, espacios y signo mas (+). Minimo 8 digitos
+numericos.
+Direccion y Localidad - No pueden estar vacios. Minimo 3 caracteres cada uno.
+Provincia - Debe seleccionarse una opcion valida (no el placeholder)
+
+Sección B) Datos de mascota:
+Nombre de la mascota - No puede estar vacio. Solo letras y espacios, minimo 2 caracteres.
+Especie - Debe seleccionarse una opcion valida. Si se elige "Otro", el campo de
+texto adicional no puede estar vacio.
+Raza - No puede estar vacio. Minimo 2 caracteres.
+Sexo - Debe seleccionarse una opcion de radio button.
+Fecha de nacimiento - No puede ser una fecha futura. La mascota no puede tener mas de 30
+años (limite razonable para cualquier especie).
+Numero de microchip - Si el checkbox de microchip esta marcado, el campo de numero no
+puede estar vacio y debe tener entre 9 y 15 digitos numericos.
+------------------------------------------------------------
+RESPUESTA RECIBIDA (resumen breve): "Utilizando tú archivo validaciones.js, actualize registro.html, registro.css y registro.js. Enlace los archivos para poder mantenerlos conectados y realizar las validaciones correctamente."
+----------------------------------------------------------
+USO EN EL PROYECTO: El prompt fue utilizado en el proyecto para poder validar todo el texto con javascript y poder dejar todo listo.
+------------------------------------------------------ 
+REFLEXION PERSONAL: Debido a que javascript es un poco más complicado de realizar que HTML o CSS por ejemplo, los cambios que sufrio el formulario fueron comprobados directamente con el Live Server. La verdad me hubiera gustado que el prompt fuera mejor, pero es lo que se pudo hacer.
+============================================================
+
+
+============================================================
+ CONSULTA #8
+Etapa del proyecto: Etapa #3
+Fecha: 19-05-2026
+ ------------------------------------------------------------
+PROMPT ENVIADO A COPILOT: Tercera etapa: En validaciones.js, sigue con lo siguiente:
+Sección B) Datos de mascota:
+Textarea de alergias - Si se completa, no puede superar los 250 caracteres.
+
+Sección C) Preferencia de Atención.
+Servicios de interes - Al menos un checkbox debe estar seleccionado.
+Turno preferido - Debe seleccionarse una opcion de radio button.
+Frecuencia de visitas - Seleccion obligatoria (no el placeholder).
+------------------------------------------------------------
+RESPUESTA RECIBIDA (resumen breve): "Añadi lo que se pidio y lo faltante del archivo. Mantenere la estructura actual y sin modificar los otros archivos, amplie las validaciones con las nuevas reglas que se pidieron de la tercera etapa."
+----------------------------------------------------------
+USO EN EL PROYECTO: El prompt fue utilizado en el proyecto para poder añadir lo faltante del formulario y sus validaciones requeridas, de la sección final.
+------------------------------------------------------ 
+REFLEXION PERSONAL: Fue lo mismo que el anterior la verdad, un poco complicado de quedar bien, pero el prompt se podria ahcer mejor sin especificar tanta información y utilizar una redacción más limpia.
 ============================================================
